@@ -1,6 +1,7 @@
 .border-bottom-x {
     border-bottom: 2px solid yellow; 
     padding-bottom: 10px; 
+    font-size: large;
   }
 
   .border-x {
@@ -13,4 +14,32 @@
     padding-bottom: 10px; 
     width: 300px;
   }
+  .link {
+    text-decoration: none;
+    transition: color 0.3s ease; 
+  }
   
+
+  .link:hover {
+    color: yellow; 
+  }
+  
+  /* Animate the border-bottom on hover */
+  .link-hover {
+    position: relative;
+  }
+  
+  .link-hover::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: width 0.3s ease; /* Add a smooth animation effect */
+  }
+  
+  .link-hover:hover::before {
+    width: 100%; /* Animate the width to create a right-to-left animation */
+  }
