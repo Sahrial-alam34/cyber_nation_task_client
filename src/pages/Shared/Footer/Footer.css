@@ -1,0 +1,16 @@
+.border-bottom-x {
+    border-bottom: 2px solid yellow; 
+    padding-bottom: 10px; 
+  }
+
+  .border-x {
+    border-top: 1px dotted  lightslategray; 
+    
+    width: 300px;
+  }
+  .border-list-bottom-x {
+    border-bottom: 1px dotted  lightslategray; 
+    padding-bottom: 10px; 
+    width: 300px;
+  }
+  
